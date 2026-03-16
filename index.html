@@ -116,7 +116,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -175,6 +175,7 @@
 
 <script>
 function loadGame() {
+  var wrapper = document.getElementById('gameWrapper');
   var cover   = document.getElementById('gameCover');
   var loading = document.getElementById('gameLoading');
   var frame   = document.getElementById('gameFrame');
@@ -182,6 +183,13 @@ function loadGame() {
   cover.style.display   = 'none';
   loading.style.display = 'flex';
   frame.style.display   = 'block';
+
+  // Scroll so the game is centered in the viewport
+  setTimeout(function() {
+    var rect = wrapper.getBoundingClientRect();
+    var scrollTop = window.pageYOffset + rect.top - (window.innerHeight - rect.height) / 2;
+    window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
+  }, 50);
 
   var iframe = document.createElement('iframe');
   iframe.src    = 'https://monkey-mart.io/iframe/index.html';
@@ -194,7 +202,6 @@ function loadGame() {
   iframe.onload = function() {
     loading.style.display = 'none';
   };
-  // Fallback: hide spinner after 15s even if onload doesn't fire
   setTimeout(function(){ loading.style.display = 'none'; }, 15000);
 
   frame.appendChild(iframe);

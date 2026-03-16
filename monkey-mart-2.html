@@ -74,7 +74,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -128,12 +128,18 @@
 
 <script>
 function loadGame() {
+  var wrapper = document.getElementById('gameWrapper');
   var cover   = document.getElementById('gameCover');
   var loading = document.getElementById('gameLoading');
   var frame   = document.getElementById('gameFrame');
   cover.style.display   = 'none';
   loading.style.display = 'flex';
   frame.style.display   = 'block';
+  setTimeout(function() {
+    var rect = wrapper.getBoundingClientRect();
+    var scrollTop = window.pageYOffset + rect.top - (window.innerHeight - rect.height) / 2;
+    window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
+  }, 50);
   var iframe = document.createElement('iframe');
   iframe.src    = 'https://monkey-mart.io/iframe/index.html';
   iframe.title  = 'Monkey Mart 2 – Free Online Game';

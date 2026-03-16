@@ -125,37 +125,32 @@ header nav a:hover { color: var(--yellow); }
   display: flex;
   align-items: center;
   justify-content: center;
-  /* warm jungle gradient matching the game's art style */
-  background:
-    radial-gradient(ellipse at 30% 40%, rgba(255,220,80,.18) 0%, transparent 60%),
-    radial-gradient(ellipse at 75% 65%, rgba(80,200,120,.22) 0%, transparent 55%),
-    linear-gradient(160deg, #2d6a1f 0%, #3a8c2a 40%, #1e5c3a 100%);
+  background: url('cover-bg.jpg') center/cover no-repeat;
   border-radius: var(--radius);
   overflow: hidden;
   user-select: none;
 }
 
-/* Subtle dot-pattern overlay */
+/* Dark gradient overlay so text stays readable */
 .game-cover::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(255,255,255,.06) 1px, transparent 1px);
-  background-size: 28px 28px;
+  background:
+    linear-gradient(to bottom,
+      rgba(0,0,0,.18) 0%,
+      rgba(0,0,0,.52) 55%,
+      rgba(0,0,0,.72) 100%);
   pointer-events: none;
 }
 
-/* Floating emoji decorations */
+/* Top shimmer strip */
 .game-cover::after {
-  content: '🍌  🛒  🐒  🍌  🛒  🐒  🍌  🛒  🐒  🍌';
+  content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
-  font-size: 1.6rem;
-  opacity: .13;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 14px 0;
-  letter-spacing: 18px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(255,220,60,.8), transparent);
   pointer-events: none;
 }
 
