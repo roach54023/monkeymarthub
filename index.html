@@ -116,7 +116,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -136,7 +136,7 @@
 <section class="hero">
   <h1>🐒 Monkey Mart – Play Free Online</h1>
   <p>Run your own monkey supermarket! Harvest bananas, stock shelves, and serve customers in this addictive idle game. No download, no login – play instantly!</p>
-  <a href="#play" class="btn-play">▶ Play Now – It's Free!</a>
+  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Play Now – It's Free!</a>
 </section>
 
 <!-- ===== Game Frame ===== -->
@@ -173,8 +173,20 @@
 </section>
 
 <script>
-function loadGame() {
+function centerOnGame() {
   var wrapper = document.getElementById('gameWrapper');
+  var rect = wrapper.getBoundingClientRect();
+  // scroll so the game wrapper is vertically centered in the viewport
+  var targetScrollTop = window.pageYOffset + rect.top - Math.max(0, (window.innerHeight - rect.height) / 2);
+  window.scrollTo({ top: targetScrollTop, behavior: 'smooth' });
+}
+
+function scrollToGame(e) {
+  e.preventDefault();
+  centerOnGame();
+}
+
+function loadGame() {
   var cover   = document.getElementById('gameCover');
   var loading = document.getElementById('gameLoading');
   var frame   = document.getElementById('gameFrame');
@@ -183,12 +195,8 @@ function loadGame() {
   loading.style.display = 'flex';
   frame.style.display   = 'block';
 
-  // Scroll so the game is centered in the viewport
-  setTimeout(function() {
-    var rect = wrapper.getBoundingClientRect();
-    var scrollTop = window.pageYOffset + rect.top - (window.innerHeight - rect.height) / 2;
-    window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
-  }, 50);
+  // Center the game in viewport after a short delay
+  setTimeout(centerOnGame, 60);
 
   var iframe = document.createElement('iframe');
   iframe.src    = 'https://monkey-mart.io/iframe/index.html';

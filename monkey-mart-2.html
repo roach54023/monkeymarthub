@@ -74,7 +74,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -96,7 +96,7 @@
 <section class="hero">
   <h1>🏪 Monkey Mart 2 – Play Free Online</h1>
   <p>The sequel is here! More sections, more helper monkeys, and a bigger supermarket to manage. Play Monkey Mart 2 free in your browser — no download needed.</p>
-  <a href="#play" class="btn-play">▶ Play Monkey Mart 2 Now</a>
+  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Play Monkey Mart 2 Now</a>
 </section>
 
 <section class="game-section" id="play">
@@ -126,19 +126,21 @@
 </section>
 
 <script>
-function loadGame() {
+function centerOnGame() {
   var wrapper = document.getElementById('gameWrapper');
+  var rect = wrapper.getBoundingClientRect();
+  var targetScrollTop = window.pageYOffset + rect.top - Math.max(0, (window.innerHeight - rect.height) / 2);
+  window.scrollTo({ top: targetScrollTop, behavior: 'smooth' });
+}
+function scrollToGame(e) { e.preventDefault(); centerOnGame(); }
+function loadGame() {
   var cover   = document.getElementById('gameCover');
   var loading = document.getElementById('gameLoading');
   var frame   = document.getElementById('gameFrame');
   cover.style.display   = 'none';
   loading.style.display = 'flex';
   frame.style.display   = 'block';
-  setTimeout(function() {
-    var rect = wrapper.getBoundingClientRect();
-    var scrollTop = window.pageYOffset + rect.top - (window.innerHeight - rect.height) / 2;
-    window.scrollTo({ top: Math.max(0, scrollTop), behavior: 'smooth' });
-  }, 50);
+  setTimeout(centerOnGame, 60);
   var iframe = document.createElement('iframe');
   iframe.src    = 'https://monkey-mart.io/iframe/index.html';
   iframe.title  = 'Monkey Mart 2 – Free Online Game';
