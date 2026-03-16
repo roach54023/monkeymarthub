@@ -1,0 +1,6 @@
+# Redirect www to non-www (canonical domain)
+https://www.monkeymarthub.com/* https://monkeymarthub.com/:splat 301!
+
+# Redirect old domain if ever accessed
+https://www.monkeymartgame.io/* https://monkeymarthub.com/:splat 301!
+https://monkeymartgame.io/* https://monkeymarthub.com/:splat 301!
