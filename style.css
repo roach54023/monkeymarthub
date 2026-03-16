@@ -1,0 +1,247 @@
+/* =============================================
+   Monkey Mart Game Site - Global Styles
+   ============================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:   #2e7d32;
+  --green-l: #43a047;
+  --yellow:  #f9a825;
+  --bg:      #f1f8e9;
+  --card:    #ffffff;
+  --text:    #212121;
+  --muted:   #616161;
+  --radius:  12px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ---- Header ---- */
+header {
+  background: var(--green);
+  color: #fff;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+header .logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header nav a {
+  color: rgba(255,255,255,.85);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: .9rem;
+  transition: color .2s;
+}
+header nav a:hover { color: var(--yellow); }
+
+/* ---- Hero ---- */
+.hero {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-l) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 40px 24px 32px;
+}
+.hero h1 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,.3);
+}
+.hero p {
+  font-size: 1.05rem;
+  opacity: .9;
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+.btn-play {
+  display: inline-block;
+  background: var(--yellow);
+  color: #212121;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform .15s, box-shadow .15s;
+}
+.btn-play:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.3); }
+
+/* ---- Game Frame ---- */
+.game-section {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+.game-wrapper {
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,.2);
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%; /* 16:10 ratio */
+}
+.game-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.game-caption {
+  text-align: center;
+  font-size: .85rem;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+/* ---- Content ---- */
+.content {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 0 16px;
+}
+.content h2 {
+  font-size: 1.4rem;
+  color: var(--green);
+  margin: 32px 0 12px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 12px;
+}
+.content h3 {
+  font-size: 1.1rem;
+  margin: 20px 0 8px;
+  color: var(--text);
+}
+.content p { margin-bottom: 12px; color: var(--muted); }
+.content ul { padding-left: 20px; margin-bottom: 12px; color: var(--muted); }
+.content ul li { margin-bottom: 6px; }
+
+/* ---- Info Cards ---- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  text-align: center;
+}
+.card .icon { font-size: 2rem; margin-bottom: 8px; }
+.card h3 { font-size: 1rem; margin-bottom: 6px; color: var(--text); }
+.card p { font-size: .88rem; color: var(--muted); margin: 0; }
+
+/* ---- Related Games ---- */
+.related {
+  max-width: 860px;
+  margin: 0 auto 48px;
+  padding: 0 16px;
+}
+.related h2 {
+  font-size: 1.3rem;
+  color: var(--green);
+  margin-bottom: 16px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 12px;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+.related-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .15s, box-shadow .15s;
+}
+.related-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.14); }
+.related-card .r-icon { font-size: 2.2rem; margin-bottom: 8px; }
+.related-card .r-name { font-weight: 600; font-size: .9rem; }
+.related-card .r-kd { font-size: .78rem; color: var(--muted); margin-top: 4px; }
+
+/* ---- FAQ ---- */
+.faq { max-width: 860px; margin: 0 auto 48px; padding: 0 16px; }
+.faq h2 {
+  font-size: 1.3rem;
+  color: var(--green);
+  margin-bottom: 16px;
+  border-left: 4px solid var(--yellow);
+  padding-left: 12px;
+}
+details {
+  background: var(--card);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  overflow: hidden;
+}
+summary {
+  padding: 14px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+summary::after { content: '＋'; font-size: 1.1rem; color: var(--green); }
+details[open] summary::after { content: '－'; }
+details p { padding: 0 18px 14px; color: var(--muted); font-size: .93rem; }
+
+/* ---- Footer ---- */
+footer {
+  background: var(--green);
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 24px 16px;
+  font-size: .85rem;
+}
+footer a { color: var(--yellow); text-decoration: none; }
+
+/* ---- Breadcrumb ---- */
+.breadcrumb {
+  max-width: 860px;
+  margin: 16px auto 0;
+  padding: 0 16px;
+  font-size: .85rem;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--green); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+  header nav { display: none; }
+  .hero h1 { font-size: 1.5rem; }
+}
