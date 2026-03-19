@@ -1,3 +1,12 @@
+# Redirect .html URLs to clean URLs (match Cloudflare Pages auto-redirect behavior)
+/monkey-mart-2.html /monkey-mart-2 301!
+/monkey-mart-tips.html /monkey-mart-tips 301!
+/how-to-play-monkey-mart.html /how-to-play-monkey-mart 301!
+/monkey-mart-unblocked.html /monkey-mart-unblocked 301!
+/monkey-mart-unblocked-6x.html /monkey-mart-unblocked-6x 301!
+/monkey-mart-unblocked-76.html /monkey-mart-unblocked-76 301!
+/privacy.html /privacy 301!
+
 # Redirect www to non-www (canonical domain)
 https://www.monkeymarthub.com/* https://monkeymarthub.com/:splat 301!
 
