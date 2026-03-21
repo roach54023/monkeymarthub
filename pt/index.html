@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SY7GENFYR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1SY7GENFYR');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monkey Mart – Jogue Grátis Online (2026) | MonkeyMartHub</title>
+  <meta name="description" content="Jogue Monkey Mart grátis online! Gerencie seu supermercado de macacos, colha culturas e atenda clientes. Sem download – jogue instantaneamente." />
+  <link rel="canonical" href="https://monkeymarthub.com/pt/" />
+  <meta name="robots" content="index, follow" />
+  <link rel="alternate" hreflang="en" href="https://monkeymarthub.com/" />
+  <link rel="alternate" hreflang="es" href="https://monkeymarthub.com/es/" />
+  <link rel="alternate" hreflang="pt" href="https://monkeymarthub.com/pt/" />
+  <link rel="alternate" hreflang="fr" href="https://monkeymarthub.com/fr/" />
+  <link rel="alternate" hreflang="de" href="https://monkeymarthub.com/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2d7a2d" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Monkey Mart – Jogue Grátis Online (2026) | MonkeyMartHub" />
+  <meta property="og:description" content="Jogue Monkey Mart grátis online! Gerencie seu supermercado de macacos, colha culturas e atenda clientes. Sem download – jogue instantaneamente." />
+  <meta property="og:url" content="https://monkeymarthub.com/pt/" />
+  <meta property="og:image" content="https://monkeymarthub.com/og-image.png" />
+  <link rel="preload" as="image" href="/cover-bg.jpg" fetchpriority="high" />
+  <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+<body>
+<header>
+  <a class="logo" href="/pt/">🐒 MonkeyMartHub</a>
+  <nav>
+    <a href="/pt/">Início</a>
+    <a href="/pt/monkey-mart-sem-bloqueio">{'title': 'Monkey Mart Sem Bloqueio – Jogue na Escola ou no Trabalho', 'desc': 'Jogue Monkey Mart sem bloqueio na escola ou no trabalho. Nossa versão está hospedada em um domínio separado, acessível em redes restritas.', 'h1': '🔓 Monkey Mart Sem Bloqueio', 'hero_p': 'Bloqueado na escola ou no trabalho? Jogue Monkey Mart sem bloqueio diretamente aqui. Sem VPN, sem extensões.', 'btn': '▶ Jogar Sem Bloqueio Agora'}</a>
+    <a href="/pt/como-jogar-monkey-mart">Como Jogar</a>
+    <a href="/pt/dicas-monkey-mart">{'title': 'Dicas de Monkey Mart – Melhores Estratégias para Ganhar Mais Rápido', 'desc': 'As melhores dicas e truques de Monkey Mart para ganhar moedas mais rápido e construir o supermercado definitivo.', 'h1': '💡 Dicas e Truques de Monkey Mart', 'hero_p': 'Maximize suas moedas, desbloqueie melhorias mais rápido e construa o supermercado mais eficiente com essas estratégias comprovadas.', 'btn': '▶ Aplicar Essas Dicas Agora'}</a>
+  </nav>
+</header>
+<section class="hero">
+  <h1>🐒 Monkey Mart – Jogue Grátis Online</h1>
+  <p>Gerencie seu próprio supermercado de macacos! Colha bananas, abasteça prateleiras e atenda clientes neste viciante jogo idle. Sem download, sem cadastro.</p>
+  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Jogar Agora – É Grátis!</a>
+</section>
+<section class="game-section" id="play">
+  <div class="game-wrapper" id="gameWrapper">
+    <div class="game-cover" id="gameCover" onclick="loadGame()">
+      <div class="cover-content">
+        <div class="cover-title">Monkey Mart</div>
+        <div class="cover-meta"><span>⭐ 4.7 / 5</span><span>🎮 No Download</span><span>📱 Mobile Ready</span></div>
+        <button class="cover-play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>▶ Jogar Agora – É Grátis!</button>
+      </div>
+    </div>
+    <div class="game-loading" id="gameLoading" style="display:none"><div class="spinner"></div><p>Carregando Monkey Mart…</p></div>
+    <div id="gameFrame" style="position:absolute;inset:0;display:none"></div>
+  </div>
+  <p class="game-caption">🎮 Use WASD ou as teclas de seta para mover seu macaco.</p>
+</section>
+<script>
+function centerOnGame() {
+  var w = document.getElementById('gameWrapper');
+  var r = w.getBoundingClientRect();
+  window.scrollTo({ top: window.pageYOffset + r.top - Math.max(0,(window.innerHeight-r.height)/2), behavior:'smooth' });
+}
+function scrollToGame(e) { e.preventDefault(); centerOnGame(); }
+function loadGame() {
+  document.getElementById('gameCover').style.display='none';
+  document.getElementById('gameLoading').style.display='flex';
+  document.getElementById('gameFrame').style.display='block';
+  setTimeout(centerOnGame,60);
+  var f=document.createElement('iframe');
+  f.src='https://monkey-mart.io/iframe/index.html';
+  f.title='Monkey Mart';
+  f.allow='autoplay; fullscreen *; payment';
+  f.allowFullscreen=true;
+  f.setAttribute('sandbox','allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin');
+  f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;';
+  f.onload=function(){document.getElementById('gameLoading').style.display='none';};
+  setTimeout(function(){document.getElementById('gameLoading').style.display='none';},15000);
+  document.getElementById('gameFrame').appendChild(f);
+}
+</script>
+<div class="content">
+  <h2>O que é Monkey Mart?</h2>
+  <p><strong>Monkey Mart</strong> é um popular jogo idle de simulação de supermercado desenvolvido pela TinyDobbins. Você controla um macaco que administra um supermercado do zero: colhe culturas, abastece prateleiras e atende clientes automaticamente.</p>
+</div>
+<section class="faq">
+  <h2>Perguntas Frequentes</h2>
+  <details>
+    <summary>Monkey Mart é gratuito?</summary>
+    <p>Sim! Completamente gratuito. Sem download, sem cadastro, sem pagamento.</p>
+  </details>
+  <details>
+    <summary>Posso jogar no celular?</summary>
+    <p>Sim. Funciona no iOS e Android com joystick na tela.</p>
+  </details>
+  <details>
+    <summary>Quem criou o Monkey Mart?</summary>
+    <p>Foi desenvolvido pela TinyDobbins e publicado originalmente no Poki e CrazyGames.</p>
+  </details>
+</section>
+<section class="related">
+  <div class="related-grid">
+    <a class="related-card" href="/pt/como-jogar-monkey-mart"><div class="r-icon">📖</div><div class="r-name">Como Jogar</div></a>
+    <a class="related-card" href="/pt/dicas-monkey-mart"><div class="r-icon">💡</div><div class="r-name">{'title': 'Dicas de Monkey Mart – Melhores Estratégias para Ganhar Mais Rápido', 'desc': 'As melhores dicas e truques de Monkey Mart para ganhar moedas mais rápido e construir o supermercado definitivo.', 'h1': '💡 Dicas e Truques de Monkey Mart', 'hero_p': 'Maximize suas moedas, desbloqueie melhorias mais rápido e construa o supermercado mais eficiente com essas estratégias comprovadas.', 'btn': '▶ Aplicar Essas Dicas Agora'}</div></a>
+    <a class="related-card" href="/pt/monkey-mart-sem-bloqueio"><div class="r-icon">🔓</div><div class="r-name">{'title': 'Monkey Mart Sem Bloqueio – Jogue na Escola ou no Trabalho', 'desc': 'Jogue Monkey Mart sem bloqueio na escola ou no trabalho. Nossa versão está hospedada em um domínio separado, acessível em redes restritas.', 'h1': '🔓 Monkey Mart Sem Bloqueio', 'hero_p': 'Bloqueado na escola ou no trabalho? Jogue Monkey Mart sem bloqueio diretamente aqui. Sem VPN, sem extensões.', 'btn': '▶ Jogar Sem Bloqueio Agora'}</div></a>
+    <a class="related-card" href="/"><div class="r-icon">🌐</div><div class="r-name">English</div></a>
+  </div>
+</section>
+<footer>
+  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Política de Privacidade</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:8px;font-size:.8rem;opacity:.7">Monkey Mart é um jogo da TinyDobbins. Este site é um site de fãs e não é afiliado ao desenvolvedor original.</p>
+</footer>
+</body>
+</html>
