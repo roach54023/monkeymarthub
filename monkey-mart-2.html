@@ -113,63 +113,24 @@
 <section class="hero">
   <h1>🏪 Monkey Mart 2 – Play Free Online</h1>
   <p>The sequel is here! More sections, more helper monkeys, and a bigger supermarket to manage. Play Monkey Mart 2 free in your browser — no download needed.</p>
-  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Play Monkey Mart 2 Now</a>
+  <a href="/" class="btn-play">▶ Play Monkey Mart 1 While You Wait</a>
 </section>
 
 <section class="game-section" id="play">
-  <div class="game-wrapper" id="gameWrapper">
-    <div class="game-cover" id="gameCover" onclick="loadGame()">
-      <div class="cover-content">
-        <div class="cover-title">Monkey Mart 2</div>
-        <div class="cover-subtitle">Bigger Store • More Helpers • New Sections</div>
-        <div class="cover-meta">
-          <span>⭐ 4.6 / 5</span>
-          <span>🎮 No Download</span>
-          <span>📱 Mobile Ready</span>
-        </div>
-        <button class="cover-play-btn" aria-label="Play Monkey Mart 2">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
-          Play Monkey Mart 2 – Free!
-        </button>
+  <div class="game-wrapper" id="gameWrapper" style="display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a4a1a 0%,#2d7a2d 100%);">
+    <div style="text-align:center;padding:40px 24px;color:#fff;">
+      <div style="font-size:64px;margin-bottom:16px;">🏗️</div>
+      <div style="font-size:28px;font-weight:700;margin-bottom:12px;">Monkey Mart 2 – Coming Soon</div>
+      <div style="font-size:16px;opacity:.85;max-width:420px;margin:0 auto 24px;">
+        The sequel is in development! While you wait, play the original Monkey Mart — it's just as addictive.
       </div>
+      <a href="/" style="display:inline-block;background:#fff;color:#2d7a2d;font-weight:700;padding:14px 32px;border-radius:8px;text-decoration:none;font-size:16px;">
+        ▶ Play Monkey Mart 1 – Free Now
+      </a>
     </div>
-    <div class="game-loading" id="gameLoading" style="display:none">
-      <div class="spinner"></div>
-      <p>Loading Monkey Mart 2…</p>
-    </div>
-    <div id="gameFrame" style="position:absolute;inset:0;display:none"></div>
   </div>
-  <p class="game-caption">🎮 Monkey Mart 2 – bigger store, more products, more fun!</p>
+  <p class="game-caption">🎮 Monkey Mart 2 is coming – stay tuned for the bigger supermarket experience!</p>
 </section>
-
-<script>
-function centerOnGame() {
-  var wrapper = document.getElementById('gameWrapper');
-  var rect = wrapper.getBoundingClientRect();
-  var targetScrollTop = window.pageYOffset + rect.top - Math.max(0, (window.innerHeight - rect.height) / 2);
-  window.scrollTo({ top: targetScrollTop, behavior: 'smooth' });
-}
-function scrollToGame(e) { e.preventDefault(); centerOnGame(); }
-function loadGame() {
-  var cover   = document.getElementById('gameCover');
-  var loading = document.getElementById('gameLoading');
-  var frame   = document.getElementById('gameFrame');
-  cover.style.display   = 'none';
-  loading.style.display = 'flex';
-  frame.style.display   = 'block';
-  setTimeout(centerOnGame, 60);
-  var iframe = document.createElement('iframe');
-  iframe.src    = 'https://monkey-mart.io/iframe/index.html';
-  iframe.title  = 'Monkey Mart 2 – Free Online Game';
-  iframe.allow  = 'autoplay; fullscreen *; payment';
-  iframe.allowFullscreen = true;
-  iframe.setAttribute('sandbox', 'allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin');
-  iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
-  iframe.onload = function() { loading.style.display = 'none'; };
-  setTimeout(function(){ loading.style.display = 'none'; }, 15000);
-  frame.appendChild(iframe);
-}
-</script>
 
 <div class="content">
   <div class="cards">
@@ -266,6 +227,21 @@ function loadGame() {
       <div class="r-icon">💡</div>
       <div class="r-name">Tips &amp; Tricks</div>
       <div class="r-kd">Pro strategies</div>
+    </a>
+    <a class="related-card" href="/monkey-mart-cheats">
+      <div class="r-icon">🎯</div>
+      <div class="r-name">Cheats &amp; Secrets</div>
+      <div class="r-kd">Hidden strategies</div>
+    </a>
+    <a class="related-card" href="/monkey-mart-all-items">
+      <div class="r-icon">🛒</div>
+      <div class="r-name">All Items List</div>
+      <div class="r-kd">Complete sections guide</div>
+    </a>
+    <a class="related-card" href="/monkey-mart-how-to-get-more-monkeys">
+      <div class="r-icon">🐒</div>
+      <div class="r-name">Get More Monkeys</div>
+      <div class="r-kd">Helper monkey guide</div>
     </a>
   </div>
 </section>

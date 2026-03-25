@@ -5,7 +5,7 @@
   <!-- ===== English (default) ===== -->
   <url>
     <loc>https://monkeymarthub.com/</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"      href="https://monkeymarthub.com/"/>
@@ -16,14 +16,41 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/"/>
   </url>
 
-  <url><loc>https://monkeymarthub.com/monkey-mart-unblocked</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://monkeymarthub.com/monkey-mart-unblocked-6x</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/monkey-mart-unblocked-76</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/how-to-play-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/monkey-mart-tips</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://monkeymarthub.com/monkey-mart-unblocked</loc>
+    <lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-unblocked"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://monkeymarthub.com/es/monkey-mart-sin-bloqueo"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://monkeymarthub.com/pt/monkey-mart-sem-bloqueio"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://monkeymarthub.com/fr/monkey-mart-debloque"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://monkeymarthub.com/de/monkey-mart-entsperrt"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/monkey-mart-unblocked"/>
+  </url>
+  <url><loc>https://monkeymarthub.com/monkey-mart-unblocked-6x</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monkeymarthub.com/monkey-mart-unblocked-76</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://monkeymarthub.com/how-to-play-monkey-mart</loc>
+    <lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/how-to-play-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://monkeymarthub.com/es/como-jugar-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://monkeymarthub.com/pt/como-jogar-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://monkeymarthub.com/fr/comment-jouer-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://monkeymarthub.com/de/monkey-mart-anleitung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/how-to-play-monkey-mart"/>
+  </url>
+  <url>
+    <loc>https://monkeymarthub.com/monkey-mart-tips</loc>
+    <lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-tips"/>
+    <xhtml:link rel="alternate" hreflang="es"        href="https://monkeymarthub.com/es/trucos-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="pt"        href="https://monkeymarthub.com/pt/dicas-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="fr"        href="https://monkeymarthub.com/fr/astuces-monkey-mart"/>
+    <xhtml:link rel="alternate" hreflang="de"        href="https://monkeymarthub.com/de/monkey-mart-tipps"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/monkey-mart-tips"/>
+  </url>
   <url>
     <loc>https://monkeymarthub.com/monkey-mart-2</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-2"/>
@@ -33,7 +60,7 @@
   <!-- ===== Long-tail English pages ===== -->
   <url>
     <loc>https://monkeymarthub.com/monkey-mart-cheats</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-cheats"/>
@@ -41,7 +68,7 @@
   </url>
   <url>
     <loc>https://monkeymarthub.com/monkey-mart-all-items</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-all-items"/>
@@ -49,7 +76,7 @@
   </url>
   <url>
     <loc>https://monkeymarthub.com/monkey-mart-how-to-get-more-monkeys</loc>
-    <lastmod>2026-03-21</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"        href="https://monkeymarthub.com/monkey-mart-how-to-get-more-monkeys"/>
@@ -57,27 +84,27 @@
   </url>
 
   <!-- ===== Español (es) ===== -->
-  <url><loc>https://monkeymarthub.com/es/</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/es/como-jugar-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/es/trucos-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/es/monkey-mart-sin-bloqueo</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/es/</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monkeymarthub.com/es/como-jugar-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/es/trucos-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/es/monkey-mart-sin-bloqueo</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ===== Português (pt) ===== -->
-  <url><loc>https://monkeymarthub.com/pt/</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/pt/como-jogar-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/pt/dicas-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/pt/monkey-mart-sem-bloqueio</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/pt/</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monkeymarthub.com/pt/como-jogar-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/pt/dicas-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/pt/monkey-mart-sem-bloqueio</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ===== Français (fr) ===== -->
-  <url><loc>https://monkeymarthub.com/fr/</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/fr/comment-jouer-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/fr/astuces-monkey-mart</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/fr/monkey-mart-debloque</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/fr/</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monkeymarthub.com/fr/comment-jouer-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/fr/astuces-monkey-mart</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/fr/monkey-mart-debloque</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- ===== Deutsch (de) ===== -->
-  <url><loc>https://monkeymarthub.com/de/</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://monkeymarthub.com/de/monkey-mart-anleitung</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/de/monkey-mart-tipps</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://monkeymarthub.com/de/monkey-mart-entsperrt</loc><lastmod>2026-03-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/de/</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://monkeymarthub.com/de/monkey-mart-anleitung</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/de/monkey-mart-tipps</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://monkeymarthub.com/de/monkey-mart-entsperrt</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
