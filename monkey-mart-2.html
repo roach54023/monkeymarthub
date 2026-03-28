@@ -67,13 +67,6 @@
       "@type": "Organization",
       "name": "TinyDobbins"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.6",
-      "ratingCount": "1250",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
   }
   </script>
@@ -89,8 +82,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="style.css?v=3" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css?v=3" />
   <link rel="alternate" hreflang="en" href="https://monkeymarthub.com/monkey-mart-2" />
   <link rel="alternate" hreflang="x-default" href="https://monkeymarthub.com/monkey-mart-2" />
 </head>
@@ -98,12 +90,13 @@
 
 <header>
   <a class="logo" href="/">🐒 MonkeyMartHub</a>
-  <nav>
+  <nav id="mainNav">
     <a href="/">Home</a>
     <a href="/monkey-mart-unblocked">Unblocked</a>
     <a href="/how-to-play-monkey-mart">How to Play</a>
     <a href="/monkey-mart-tips">Tips</a>
   </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </header>
 
 <div class="breadcrumb">
@@ -247,9 +240,17 @@
 </section>
 
 <footer>
-  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
   <p style="margin-top:8px;font-size:.8rem;opacity:.7">Monkey Mart is a game by TinyDobbins. This site is a fan site and is not affiliated with the original developer.</p>
 </footer>
 
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mainNav');
+  var expanded = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', expanded);
+  this.textContent = expanded ? '✕' : '☰';
+});
+</script>
 </body>
 </html>

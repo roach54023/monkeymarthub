@@ -1,0 +1,12 @@
+# Python scripts used for site generation (not part of the deployed site)
+generate_i18n.py
+inject_hreflang.py
+
+# Content packs / working docs
+backlink-content-pack.md
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/

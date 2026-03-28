@@ -14,6 +14,7 @@
   <meta name="description" content="¡Juega Monkey Mart gratis online! Dirige tu supermercado de monos, cosecha cultivos y atiende clientes. Sin descarga – juega al instante." />
   <link rel="canonical" href="https://monkeymarthub.com/es/" />
   <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="zBErsMEGdeOQxdclZ6HSJ8odAVQ6HLVTTwXkBO25gxQ" />
   <link rel="alternate" hreflang="en" href="https://monkeymarthub.com/" />
   <link rel="alternate" hreflang="es" href="https://monkeymarthub.com/es/" />
   <link rel="alternate" hreflang="pt" href="https://monkeymarthub.com/pt/" />
@@ -29,18 +30,23 @@
   <meta property="og:description" content="¡Juega Monkey Mart gratis online! Dirige tu supermercado de monos, cosecha cultivos y atiende clientes. Sin descarga – juega al instante." />
   <meta property="og:url" content="https://monkeymarthub.com/es/" />
   <meta property="og:image" content="https://monkeymarthub.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Monkey Mart – Juega Gratis Online (2026) | MonkeyMartHub" />
+  <meta name="twitter:description" content="¡Juega Monkey Mart gratis online! Dirige tu supermercado de monos, cosecha cultivos y atiende clientes. Sin descarga – juega al instante." />
+  <meta name="twitter:image" content="https://monkeymarthub.com/og-image.png" />
   <link rel="preload" as="image" href="/cover-bg.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="/style.css?v=3" />
 </head>
 <body>
 <header>
   <a class="logo" href="/es/">🐒 MonkeyMartHub</a>
-  <nav>
+  <nav id="mainNav">
     <a href="/es/">Inicio</a>
     <a href="/es/monkey-mart-sin-bloqueo">Sin Bloqueo</a>
     <a href="/es/como-jugar-monkey-mart">Cómo Jugar</a>
     <a href="/es/trucos-monkey-mart">Trucos</a>
   </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </header>
 <section class="hero">
   <h1>🐒 Monkey Mart – Juega Gratis Online</h1>
@@ -113,8 +119,17 @@ function loadGame() {
   </div>
 </section>
 <footer>
-  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Política de Privacidad</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Política de Privacidad</a></p>
   <p style="margin-top:8px;font-size:.8rem;opacity:.7">Monkey Mart es un juego de TinyDobbins. Este sitio es un sitio de fans y no está afiliado con el desarrollador original.</p>
+  <p style="margin-top:8px;font-size:.75rem;opacity:.5"><a href="https://www.provenexpert.com/howie3/" rel="nofollow" target="_blank" style="color:inherit">ProvenExpert</a> &nbsp;|&nbsp; <a href="https://sites.google.com/view/roach54023" rel="nofollow" target="_blank" style="color:inherit">Partner Site</a></p>
 </footer>
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mainNav');
+  var expanded = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', expanded);
+  this.textContent = expanded ? '✕' : '☰';
+});
+</script>
 </body>
 </html>

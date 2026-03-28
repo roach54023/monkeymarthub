@@ -107,4 +107,7 @@
   <url><loc>https://monkeymarthub.com/de/monkey-mart-tipps</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://monkeymarthub.com/de/monkey-mart-entsperrt</loc><lastmod>2026-03-25</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- ===== Utility pages ===== -->
+  <url><loc>https://monkeymarthub.com/privacy</loc><lastmod>2026-03-28</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
 </urlset>
