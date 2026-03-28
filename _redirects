@@ -1,4 +1,5 @@
 # Redirect .html URLs to clean URLs (match Cloudflare Pages auto-redirect behavior)
+/sitemap.html /sitemap 301!
 /monkey-mart-2.html /monkey-mart-2 301!
 /monkey-mart-tips.html /monkey-mart-tips 301!
 /how-to-play-monkey-mart.html /how-to-play-monkey-mart 301!
