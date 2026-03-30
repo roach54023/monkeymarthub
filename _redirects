@@ -1,34 +1,6 @@
-# Redirect .html URLs to clean URLs (match Cloudflare Pages auto-redirect behavior)
-/monkey-mart-2.html /monkey-mart-2 301!
-/monkey-mart-tips.html /monkey-mart-tips 301!
-/how-to-play-monkey-mart.html /how-to-play-monkey-mart 301!
-/monkey-mart-unblocked.html /monkey-mart-unblocked 301!
-/monkey-mart-unblocked-6x.html /monkey-mart-unblocked-6x 301!
-/monkey-mart-unblocked-76.html /monkey-mart-unblocked-76 301!
-/privacy.html /privacy 301!
-
 # Redirect www to non-www (canonical domain)
 https://www.monkeymarthub.com/* https://monkeymarthub.com/:splat 301!
 
 # Redirect old domain if ever accessed
 https://www.monkeymartgame.io/* https://monkeymarthub.com/:splat 301!
 https://monkeymartgame.io/* https://monkeymarthub.com/:splat 301!
-
-# Multi-language .html → clean URL redirects
-/es/como-jugar-monkey-mart.html /es/como-jugar-monkey-mart 301!
-/es/trucos-monkey-mart.html /es/trucos-monkey-mart 301!
-/es/monkey-mart-sin-bloqueo.html /es/monkey-mart-sin-bloqueo 301!
-/pt/como-jogar-monkey-mart.html /pt/como-jogar-monkey-mart 301!
-/pt/dicas-monkey-mart.html /pt/dicas-monkey-mart 301!
-/pt/monkey-mart-sem-bloqueio.html /pt/monkey-mart-sem-bloqueio 301!
-/fr/comment-jouer-monkey-mart.html /fr/comment-jouer-monkey-mart 301!
-/fr/astuces-monkey-mart.html /fr/astuces-monkey-mart 301!
-/fr/monkey-mart-debloque.html /fr/monkey-mart-debloque 301!
-/de/monkey-mart-anleitung.html /de/monkey-mart-anleitung 301!
-/de/monkey-mart-tipps.html /de/monkey-mart-tipps 301!
-/de/monkey-mart-entsperrt.html /de/monkey-mart-entsperrt 301!
-
-# Long-tail pages .html → clean URL
-/monkey-mart-cheats.html /monkey-mart-cheats 301!
-/monkey-mart-all-items.html /monkey-mart-all-items 301!
-/monkey-mart-how-to-get-more-monkeys.html /monkey-mart-how-to-get-more-monkeys 301!
