@@ -28,12 +28,13 @@
 <body>
 <header>
   <a class="logo" href="/fr/">🐒 MonkeyMartHub</a>
-  <nav>
+  <nav id="mainNav">
     <a href="/fr/">Accueil</a>
     <a href="/fr/monkey-mart-debloque">Débloqué</a>
     <a href="/fr/comment-jouer-monkey-mart">Comment Jouer</a>
     <a href="/fr/astuces-monkey-mart">Astuces</a>
   </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 </header>
 <div class="breadcrumb"><a href="/fr/">Accueil</a> › Astuces Monkey Mart</div>
 <section class="hero">
@@ -116,5 +117,13 @@
   <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Politique de Confidentialité</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
   <p style="margin-top:8px;font-size:.8rem;opacity:.7">Monkey Mart est un jeu de TinyDobbins. Ce site est un site de fans et n'est pas affilié au développeur original.</p>
 </footer>
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mainNav');
+  var expanded = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', expanded);
+  this.textContent = expanded ? '✕' : '☰';
+});
+</script>
 </body>
 </html>

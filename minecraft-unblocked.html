@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SY7GENFYR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1SY7GENFYR');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minecraft Unblocked – Play Classic Minecraft Free at School (2026)</title>
+  <meta name="description" content="Play Minecraft unblocked free online! Mine blocks, build structures, craft tools, and survive the night. Classic Minecraft experience in your browser. Works at school on Chromebooks." />
+  <link rel="canonical" href="https://monkeymarthub.com/minecraft-unblocked" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2d7a2d" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Minecraft Unblocked – Play Classic Minecraft Free at School (2026)" />
+  <meta property="og:description" content="Play Minecraft unblocked free online! Mine, build, craft, and survive. Classic Minecraft experience in your browser. Works at school on Chromebooks." />
+  <meta property="og:url" content="https://monkeymarthub.com/minecraft-unblocked" />
+  <meta property="og:image" content="https://monkeymarthub.com/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Minecraft Unblocked",
+    "description": "Minecraft is the best-selling video game of all time. Mine resources, craft tools, build structures, and survive against monsters in an infinite procedurally generated world.",
+    "genre": ["Sandbox", "Survival", "Adventure", "Building"],
+    "playMode": ["SinglePlayer", "MultiPlayer"],
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "url": "https://monkeymarthub.com/minecraft-unblocked",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What version of Minecraft can I play unblocked?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The browser version is Minecraft Classic (2009), the original version of the game. It's free, requires no download, and lets you place and break blocks in a 32-player multiplayer world. For the full modern Minecraft experience, you need the paid Java or Bedrock edition." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I survive my first night in Minecraft?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Punch trees to get wood, craft a crafting table, make wooden tools, mine stone, and build a small shelter before dark. The first night is the most dangerous — monsters spawn in the dark and will attack you. Even a dirt hut is enough to survive." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Survival and Creative mode?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In Survival mode, you gather resources, manage hunger, and fight monsters. In Creative mode, you have unlimited blocks, can fly, and take no damage. Creative is perfect for building projects; Survival is the core gameplay experience." }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+<body>
+<header>
+  <a class="logo" href="/">🐒 MonkeyMartHub</a>
+  <nav id="mainNav">
+    <a href="/">Home</a>
+    <a href="/monkey-mart-unblocked">Monkey Mart</a>
+    <a href="/slope-unblocked">Slope</a>
+    <a href="/minecraft-unblocked">Minecraft</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › Minecraft Unblocked
+</div>
+
+<section class="hero">
+  <h1>⛏️ Minecraft Unblocked – Play Free Online</h1>
+  <p>The best-selling video game of all time, playable in your browser. Mine blocks, craft tools, build anything you can imagine, and survive the night. Minecraft Classic is free, requires no download, and works at school on Chromebooks.</p>
+  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Play Minecraft – Free!</a>
+</section>
+
+<section class="game-section" id="play">
+  <div class="game-wrapper" id="gameWrapper">
+    <div class="game-cover" id="gameCover" onclick="loadGame()">
+      <div class="cover-content">
+        <div class="cover-title">Minecraft Classic</div>
+        <div class="cover-subtitle">The Original Minecraft – Unblocked Free</div>
+        <div class="cover-meta">
+          <span>⭐ 4.9 / 5</span>
+          <span>🎮 No Download</span>
+          <span>🏫 School-Friendly</span>
+        </div>
+        <button class="cover-play-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+          Play Minecraft – Free!
+        </button>
+      </div>
+    </div>
+    <div class="game-loading" id="gameLoading" style="display:none">
+      <div class="spinner"></div>
+      <p>Loading Minecraft Classic…</p>
+    </div>
+    <div id="gameFrame" style="position:absolute;inset:0;display:none"></div>
+  </div>
+  <p class="game-caption">⛏️ Click to load. Use WASD to move, left-click to break blocks, right-click to place. Press E for inventory.</p>
+</section>
+
+<script>
+function centerOnGame(){var w=document.getElementById('gameWrapper');var r=w.getBoundingClientRect();window.scrollTo({top:window.pageYOffset+r.top-Math.max(0,(window.innerHeight-r.height)/2),behavior:'smooth'});}
+function scrollToGame(e){e.preventDefault();centerOnGame();}
+function loadGame(){
+  document.getElementById('gameCover').style.display='none';
+  document.getElementById('gameLoading').style.display='flex';
+  document.getElementById('gameFrame').style.display='block';
+  setTimeout(centerOnGame,60);
+  var f=document.createElement('iframe');
+  f.src='https://classic.minecraft.net/';
+  f.title='Minecraft Classic Unblocked – Free Online Game';
+  f.allow='autoplay; fullscreen *; pointer-lock *';
+  f.allowFullscreen=true;
+  f.setAttribute('sandbox','allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin');
+  f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;';
+  f.onload=function(){document.getElementById('gameLoading').style.display='none';};
+  setTimeout(function(){document.getElementById('gameLoading').style.display='none';},15000);
+  document.getElementById('gameFrame').appendChild(f);
+}
+</script>
+
+<div class="content">
+  <div class="cards">
+    <div class="card"><div class="icon">⛏️</div><h3>Mine Everything</h3><p>Break any block in the world to collect resources. Wood, stone, iron, diamond — the deeper you dig, the rarer the materials.</p></div>
+    <div class="card"><div class="icon">🏗️</div><h3>Build Anything</h3><p>From a simple dirt hut to a massive castle — Minecraft's building system is limited only by your imagination and the blocks you've gathered.</p></div>
+    <div class="card"><div class="icon">🌙</div><h3>Survive the Night</h3><p>When the sun sets, zombies, skeletons, and creepers emerge. Build shelter, light torches, and craft weapons to stay alive.</p></div>
+    <div class="card"><div class="icon">🔧</div><h3>Craft & Upgrade</h3><p>Combine resources at a crafting table to make tools, weapons, armor, and machines. Better materials mean better gear.</p></div>
+  </div>
+
+  <h2>What is Minecraft?</h2>
+  <p><strong>Minecraft</strong> is the best-selling video game of all time, with over 300 million copies sold across all platforms. Created by Markus "Notch" Persson and released in 2011 by Mojang, Minecraft is a sandbox game set in an infinite procedurally generated world made entirely of blocks. Players can mine resources, craft tools, build structures, and survive against monsters — or simply explore and create in Creative mode with unlimited blocks.</p>
+  <p>The browser version available here is <strong>Minecraft Classic</strong> — the original 2009 version of the game, released for free by Mojang to celebrate Minecraft's 10th anniversary. It's a pure building experience with 32 block types and supports up to 32 players in the same world. While it lacks the survival mechanics and modern features of the full game, it's a perfect way to experience the original Minecraft in your browser with no download required.</p>
+
+  <h2>How to Play Minecraft Classic</h2>
+  <ul>
+    <li><strong>Move:</strong> WASD keys to walk, Space to jump, Shift to sneak.</li>
+    <li><strong>Look around:</strong> Move your mouse to look. Click inside the game window to lock your cursor.</li>
+    <li><strong>Break blocks:</strong> Left-click and hold on a block to break it.</li>
+    <li><strong>Place blocks:</strong> Right-click to place the selected block.</li>
+    <li><strong>Select blocks:</strong> Press E to open your inventory and select which block to place. Use the number keys 1–9 to switch between hotbar slots.</li>
+    <li><strong>Fly:</strong> In Classic mode, press Space twice to toggle flying. Use Space to go up and Shift to go down while flying.</li>
+    <li><strong>Multiplayer:</strong> Share the URL with friends to build together in the same world.</li>
+  </ul>
+
+  <h2>Minecraft Survival Tips (Full Game)</h2>
+  <h3>1. Your first priority is wood</h3>
+  <p>The moment you spawn, punch trees. You need wood to craft a crafting table, which unlocks the full crafting grid. From wood you can make wooden tools, which let you mine stone faster. From stone you can make stone tools, which are significantly more durable. This progression — wood → stone → iron → diamond — is the core loop of Minecraft's early game.</p>
+
+  <h3>2. Build shelter before your first night</h3>
+  <p>You have about 10 minutes of in-game daylight before monsters spawn. Use that time to gather wood, craft basic tools, and build a small shelter. It doesn't need to be pretty — a 5×5 dirt box with a door is enough. The first night is the most dangerous moment in any Minecraft run.</p>
+
+  <h3>3. Light up your base</h3>
+  <p>Monsters spawn in darkness. Place torches everywhere inside and around your base to prevent spawning. Torches are cheap — just a stick and a piece of coal or charcoal. Charcoal is made by smelting wood logs in a furnace, so you don't even need to find coal to get started.</p>
+
+  <h3>4. Never dig straight down</h3>
+  <p>This is the most important rule in Minecraft. Digging straight down can drop you into a cave, a lava pool, or a ravine with no warning. Always dig at an angle or use a staircase pattern when mining downward.</p>
+
+  <h3>5. Find iron as fast as possible</h3>
+  <p>Iron tools and armor are a massive upgrade over stone. Iron is found underground, typically between Y-levels 0 and 63. Once you have iron, you can make a bucket (to move water and lava), a shield (to block attacks), and full armor that makes you much harder to kill.</p>
+</div>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>What version of Minecraft can I play unblocked?</summary>
+    <p>The browser version is Minecraft Classic (2009), the original version of the game. It's free, requires no download, and lets you place and break blocks in a 32-player multiplayer world. For the full modern Minecraft experience with survival, crafting, and all modern features, you need the paid Java or Bedrock edition.</p>
+  </details>
+  <details>
+    <summary>How do I survive my first night in Minecraft?</summary>
+    <p>Punch trees to get wood, craft a crafting table, make wooden tools, mine stone, and build a small shelter before dark. The first night is the most dangerous — monsters spawn in the dark and will attack you. Even a dirt hut is enough to survive. Light the inside with torches to prevent spawning.</p>
+  </details>
+  <details>
+    <summary>What is the difference between Survival and Creative mode?</summary>
+    <p>In Survival mode, you gather resources, manage hunger, and fight monsters. In Creative mode, you have unlimited blocks, can fly, and take no damage. Creative is perfect for building projects; Survival is the core gameplay experience that most players consider the "real" Minecraft.</p>
+  </details>
+  <details>
+    <summary>Can I play Minecraft with friends for free?</summary>
+    <p>Yes! Minecraft Classic supports up to 32 players in the same world. Just share the URL of your Classic session with friends and they can join. For the full multiplayer experience with survival mechanics, you'd need the paid version and a server.</p>
+  </details>
+</section>
+
+<section class="related">
+  <h2>More Unblocked Games</h2>
+  <div class="related-grid">
+    <a class="related-card" href="/monkey-mart-unblocked"><div class="r-icon">🐒</div><div class="r-name">Monkey Mart</div><div class="r-kd">Idle supermarket</div></a>
+    <a class="related-card" href="/slope-unblocked"><div class="r-icon">🎱</div><div class="r-name">Slope Unblocked</div><div class="r-kd">3D ball runner</div></a>
+    <a class="related-card" href="/run-3-unblocked"><div class="r-icon">🏃</div><div class="r-name">Run 3 Unblocked</div><div class="r-kd">Space tunnel runner</div></a>
+    <a class="related-card" href="/geometry-dash-unblocked"><div class="r-icon">🔷</div><div class="r-name">Geometry Dash</div><div class="r-kd">Rhythm platformer</div></a>
+    <a class="related-card" href="/retro-bowl-unblocked"><div class="r-icon">🏈</div><div class="r-name">Retro Bowl</div><div class="r-kd">Pixel football</div></a>
+    <a class="related-card" href="/basketball-legends-unblocked"><div class="r-icon">🏀</div><div class="r-name">Basketball Legends</div><div class="r-kd">2-player hoops</div></a>
+    <a class="related-card" href="/cookie-clicker-unblocked"><div class="r-icon">🍪</div><div class="r-name">Cookie Clicker</div><div class="r-kd">Idle clicker</div></a>
+    <a class="related-card" href="/"><div class="r-icon">🏠</div><div class="r-name">All Games</div><div class="r-kd">Browse all titles</div></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:8px;font-size:.8rem;opacity:.7">Minecraft is a trademark of Mojang Studios / Microsoft. This site is a fan site and is not affiliated with Mojang or Microsoft.</p>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mainNav');
+  var expanded = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', expanded);
+  this.textContent = expanded ? '✕' : '☰';
+});
+</script>
+</body>
+</html>

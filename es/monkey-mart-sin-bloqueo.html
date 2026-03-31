@@ -29,13 +29,15 @@
 <body>
 <header>
   <a class="logo" href="/es/">🐒 MonkeyMartHub</a>
-  <nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  <nav id="mainNav">
     <a href="/es/">Inicio</a>
     <a href="/es/monkey-mart-sin-bloqueo">Sin Bloqueo</a>
     <a href="/es/como-jugar-monkey-mart">Cómo Jugar</a>
     <a href="/es/trucos-monkey-mart">Trucos</a>
   </nav>
 </header>
+<script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('mainNav').classList.toggle('open');});</script>
 <div class="breadcrumb"><a href="/es/">Inicio</a> › Monkey Mart Sin Bloqueo</div>
 <section class="hero">
   <h1>🔓 Monkey Mart Sin Bloqueo – Juega en la Escuela y el Trabajo</h1>

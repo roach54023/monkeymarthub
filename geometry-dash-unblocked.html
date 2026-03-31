@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SY7GENFYR"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1SY7GENFYR');</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geometry Dash Unblocked – Play Free at School (2026)</title>
+  <meta name="description" content="Play Geometry Dash unblocked free online! Jump and fly your cube through rhythm-based obstacle courses. Works at school on Chromebooks. No download needed." />
+  <link rel="canonical" href="https://monkeymarthub.com/geometry-dash-unblocked" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="theme-color" content="#2d7a2d" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Geometry Dash Unblocked – Play Free at School (2026)" />
+  <meta property="og:description" content="Play Geometry Dash unblocked free online! Jump your cube through rhythm-based levels. Works at school on Chromebooks. No download needed." />
+  <meta property="og:url" content="https://monkeymarthub.com/geometry-dash-unblocked" />
+  <meta property="og:image" content="https://monkeymarthub.com/og-image.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Geometry Dash Unblocked",
+    "description": "Geometry Dash is a rhythm-based platformer where you guide a cube through obstacle-filled levels synced to electronic music. One tap to jump — timing is everything.",
+    "genre": ["Platformer", "Rhythm", "Arcade"],
+    "playMode": "SinglePlayer",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "url": "https://monkeymarthub.com/geometry-dash-unblocked",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Geometry Dash unblocked free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! The browser version of Geometry Dash is completely free to play. The full paid game is available on Steam and mobile, but the web version gives you access to the core levels at no cost." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the hardest level in Geometry Dash?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In the official game, the hardest rated level is Demon difficulty. Community-created Extreme Demon levels like Tartarus and Bloodbath are considered among the hardest platformer challenges ever made." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Geometry Dash work on Chromebook?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. The browser version of Geometry Dash runs entirely in the browser with no plugins needed, making it fully compatible with school Chromebooks." }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/style.css?v=3" />
+</head>
+<body>
+<header>
+  <a class="logo" href="/">🐒 MonkeyMartHub</a>
+  <nav id="mainNav">
+    <a href="/">Home</a>
+    <a href="/monkey-mart-unblocked">Monkey Mart</a>
+    <a href="/slope-unblocked">Slope</a>
+    <a href="/geometry-dash-unblocked">Geometry Dash</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">Home</a> › Geometry Dash Unblocked
+</div>
+
+<section class="hero">
+  <h1>🔷 Geometry Dash Unblocked – Play Free Online</h1>
+  <p>Jump, fly, and flip your cube through neon obstacle courses perfectly synced to electronic music. One tap controls everything — but perfect timing is the difference between glory and starting over. Works at school on Chromebooks, no download needed.</p>
+  <a href="#play" class="btn-play" onclick="scrollToGame(event)">▶ Play Geometry Dash – Free!</a>
+</section>
+
+<section class="game-section" id="play">
+  <div class="game-wrapper" id="gameWrapper">
+    <div class="game-cover" id="gameCover" onclick="loadGame()">
+      <div class="cover-content">
+        <div class="cover-title">Geometry Dash</div>
+        <div class="cover-subtitle">Rhythm Platformer – Unblocked</div>
+        <div class="cover-meta">
+          <span>⭐ 4.9 / 5</span>
+          <span>🎮 No Download</span>
+          <span>🏫 School-Friendly</span>
+        </div>
+        <button class="cover-play-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+          Play Geometry Dash – Free!
+        </button>
+      </div>
+    </div>
+    <div class="game-loading" id="gameLoading" style="display:none">
+      <div class="spinner"></div>
+      <p>Loading Geometry Dash…</p>
+    </div>
+    <div id="gameFrame" style="position:absolute;inset:0;display:none"></div>
+  </div>
+  <p class="game-caption">🎮 Click or press Space / Up Arrow to jump. Hold to keep jumping. Time your taps to the beat!</p>
+</section>
+
+<script>
+function centerOnGame(){var w=document.getElementById('gameWrapper');var r=w.getBoundingClientRect();window.scrollTo({top:window.pageYOffset+r.top-Math.max(0,(window.innerHeight-r.height)/2),behavior:'smooth'});}
+function scrollToGame(e){e.preventDefault();centerOnGame();}
+function loadGame(){
+  document.getElementById('gameCover').style.display='none';
+  document.getElementById('gameLoading').style.display='flex';
+  document.getElementById('gameFrame').style.display='block';
+  setTimeout(centerOnGame,60);
+  var f=document.createElement('iframe');
+  f.src='https://geometry-dash-unbanned.github.io/';
+  f.title='Geometry Dash Unblocked – Free Online Game';
+  f.allow='autoplay; fullscreen *';
+  f.allowFullscreen=true;
+  f.setAttribute('sandbox','allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-scripts allow-same-origin');
+  f.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;';
+  f.onload=function(){document.getElementById('gameLoading').style.display='none';};
+  setTimeout(function(){document.getElementById('gameLoading').style.display='none';},15000);
+  document.getElementById('gameFrame').appendChild(f);
+}
+</script>
+
+<div class="content">
+  <div class="cards">
+    <div class="card"><div class="icon">🎵</div><h3>Rhythm-Based</h3><p>Every obstacle is synced to the music. Learn the beat and the level becomes muscle memory.</p></div>
+    <div class="card"><div class="icon">💀</div><h3>One-Hit Deaths</h3><p>Touch any obstacle and you restart from the beginning. No checkpoints — pure precision required.</p></div>
+    <div class="card"><div class="icon">🔷</div><h3>Shape Shifting</h3><p>Your cube transforms into a ship, ball, UFO, wave, and more — each with different physics.</p></div>
+    <div class="card"><div class="icon">🌟</div><h3>Practice Mode</h3><p>Place checkpoints anywhere in a level to practice the hardest sections without restarting from zero.</p></div>
+  </div>
+
+  <h2>What is Geometry Dash?</h2>
+  <p><strong>Geometry Dash</strong> is a rhythm-based platformer developed by Robert Topala (RobTop Games) and released in 2013. It became one of the most iconic mobile and browser games ever made, spawning a massive community of level creators and speedrunners. The premise is deceptively simple: guide a cube through an obstacle course synced to electronic music. One tap to jump. But the execution demands near-perfect timing and pattern memorization.</p>
+  <p>What makes Geometry Dash special is its progression system. The official levels range from Easy to Demon difficulty, and the community has created millions of custom levels — from beginner-friendly to literally impossible. The browser version gives you access to the core experience with the original levels, completely free.</p>
+
+  <h2>How to Play Geometry Dash</h2>
+  <ul>
+    <li><strong>Jump</strong> by clicking, tapping, or pressing <kbd>Space</kbd> / <kbd>↑</kbd> Up Arrow.</li>
+    <li><strong>Hold</strong> the button to keep jumping repeatedly — useful for rapid spike sequences.</li>
+    <li>Your cube moves forward automatically at a fixed speed. You only control jumping.</li>
+    <li>Hit any obstacle or spike and you <strong>restart from the beginning</strong> of the level.</li>
+    <li>Use <strong>Practice Mode</strong> to place manual checkpoints and learn difficult sections.</li>
+    <li>When your cube enters a <strong>portal</strong>, it transforms — ship portals make you fly, ball portals change gravity, wave portals make you a diagonal wave.</li>
+  </ul>
+
+  <h2>Geometry Dash Level Difficulty Guide</h2>
+  <h3>Easy / Normal (1–3 stars)</h3>
+  <p>The starter levels like Stereo Madness and Back On Track. Slow speed, simple obstacles, forgiving timing windows. Perfect for learning the basic jump mechanics and getting comfortable with the rhythm.</p>
+
+  <h3>Hard / Harder (4–6 stars)</h3>
+  <p>Levels like Polargeist and Dry Out introduce faster speeds, ship sections, and tighter obstacle patterns. You'll need to start memorizing sequences rather than reacting in real time.</p>
+
+  <h3>Insane (7–8 stars)</h3>
+  <p>Levels like Electrodynamix and Hexagon Force require precise timing across multiple game modes. Expect to die hundreds of times before completing these.</p>
+
+  <h3>Demon (9–10 stars)</h3>
+  <p>The hardest official levels. Community Demon levels go even further — Extreme Demons like Bloodbath and Tartarus are considered some of the hardest challenges in gaming history.</p>
+
+  <h2>Tips for Beating Geometry Dash Levels</h2>
+  <h3>1. Listen to the music, not just the visuals</h3>
+  <p>Every jump in Geometry Dash is timed to the beat. If you learn the rhythm of the song, your fingers will naturally find the right timing. Mute the game and you'll struggle far more.</p>
+
+  <h3>2. Use Practice Mode religiously</h3>
+  <p>Don't grind a full level from the start when you keep dying at the same section. Use Practice Mode to place a checkpoint just before the hard part and drill it until it's automatic.</p>
+
+  <h3>3. Watch the level before playing</h3>
+  <p>For harder levels, watch a full playthrough video first. Knowing what's coming removes the surprise factor and lets you focus on execution rather than discovery.</p>
+
+  <h3>4. Take breaks when frustrated</h3>
+  <p>Geometry Dash is a game of muscle memory. If you're tilting after repeated deaths, step away for 10 minutes. You'll often come back and clear the section on your first attempt.</p>
+</div>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <details>
+    <summary>Is Geometry Dash unblocked free?</summary>
+    <p>Yes! The browser version of Geometry Dash is completely free to play. The full paid game is available on Steam and mobile, but the web version gives you access to the core levels at no cost.</p>
+  </details>
+  <details>
+    <summary>What is the hardest level in Geometry Dash?</summary>
+    <p>In the official game, the hardest rated level is Demon difficulty. Community-created Extreme Demon levels like Tartarus and Bloodbath are considered among the hardest platformer challenges ever made — some players spend months completing them.</p>
+  </details>
+  <details>
+    <summary>Does Geometry Dash work on Chromebook?</summary>
+    <p>Yes. The browser version runs entirely in the browser with no plugins needed, making it fully compatible with school Chromebooks and restricted networks.</p>
+  </details>
+  <details>
+    <summary>Who made Geometry Dash?</summary>
+    <p>Geometry Dash was created by Robert Topala, known online as RobTop, through his studio RobTop Games. It was first released on iOS and Android in 2013 and later on Steam in 2014.</p>
+  </details>
+</section>
+
+<section class="related">
+  <h2>More Unblocked Games</h2>
+  <div class="related-grid">
+    <a class="related-card" href="/slope-unblocked"><div class="r-icon">🎱</div><div class="r-name">Slope Unblocked</div><div class="r-kd">3D ball runner</div></a>
+    <a class="related-card" href="/run-3-unblocked"><div class="r-icon">🏃</div><div class="r-name">Run 3 Unblocked</div><div class="r-kd">Space tunnel runner</div></a>
+    <a class="related-card" href="/retro-bowl-unblocked"><div class="r-icon">🏈</div><div class="r-name">Retro Bowl</div><div class="r-kd">Pixel football</div></a>
+    <a class="related-card" href="/basketball-legends-unblocked"><div class="r-icon">🏀</div><div class="r-name">Basketball Legends</div><div class="r-kd">2-player hoops</div></a>
+    <a class="related-card" href="/cookie-clicker-unblocked"><div class="r-icon">🍪</div><div class="r-name">Cookie Clicker</div><div class="r-kd">Idle clicking game</div></a>
+    <a class="related-card" href="/minecraft-unblocked"><div class="r-icon">⛏️</div><div class="r-name">Minecraft Unblocked</div><div class="r-kd">Build &amp; survive</div></a>
+    <a class="related-card" href="/monkey-mart-unblocked"><div class="r-icon">🐒</div><div class="r-name">Monkey Mart</div><div class="r-kd">Idle supermarket</div></a>
+    <a class="related-card" href="/"><div class="r-icon">🏠</div><div class="r-name">All Games</div><div class="r-kd">Browse all titles</div></a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 MonkeyMartHub.com &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:8px;font-size:.8rem;opacity:.7">Geometry Dash is a game by RobTop Games. This site is a fan site and is not affiliated with the original developer.</p>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.getElementById('mainNav');
+  var expanded = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', expanded);
+  this.textContent = expanded ? '✕' : '☰';
+});
+</script>
+</body>
+</html>
